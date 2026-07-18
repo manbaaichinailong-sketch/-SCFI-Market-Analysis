@@ -2,6 +2,8 @@
 
 A portfolio-grade analysis of the Shanghai Containerized Freight Index (SCFI), designed for shipping, liner, freight-forwarding and maritime internship applications.
 
+![Python tests](https://github.com/manbaaichinailong-sketch/-SCFI-Market-Analysis/actions/workflows/python-tests.yml/badge.svg)
+
 ## What makes this project different
 
 This is not just an index chart. The project combines:
@@ -78,6 +80,15 @@ python scfi_analysis.py
 ```
 
 The script validates the input, calculates metrics, exports analytical CSV files and regenerates five charts.
+
+## Run the test suite
+
+```bash
+python -m pip install -r python/requirements-dev.txt
+python -m pytest -q
+```
+
+GitHub Actions runs the tests on Python 3.11 and 3.12 for every push and pull request. See [DATA_DICTIONARY.md](DATA_DICTIONARY.md) for field definitions and calculation notes.
 
 ## Excel workbook
 
